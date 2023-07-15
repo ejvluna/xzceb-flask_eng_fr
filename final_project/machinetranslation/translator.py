@@ -3,10 +3,10 @@ from deep_translator import MyMemoryTranslator
 
 def english_french(english_text):
     '''Takes in an english word, returns the equivalent word in french'''
-    french_text = english_text.translate(MyMemoryTranslator)
+    french_text = MyMemoryTranslator(source="eng", target="fr").translate(english_text)
     return french_text
 
 def french_english(french_text):
     '''Takes in a french word, returns the equivalent word in english'''
-    english_text = french_text.translate(MyMemoryTranslator)
+    english_text = MyMemoryTranslator(source="fr", target="eng").translate(french_text)
     return english_text
