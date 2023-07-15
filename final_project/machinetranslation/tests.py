@@ -1,5 +1,6 @@
 """A module with functions to test text translation from english to french and vice-versa"""
 import unittest
+
 from translator import english_french, french_english
 
 class TestEnglish(unittest.TestCase):
